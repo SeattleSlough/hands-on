@@ -1,0 +1,12 @@
+FROM ubuntu
+#ENTRYPOINT cannot be overridden in cli
+
+ENTRYPOINT [ "echo", "hello" ]
+CMD [ "Joe" ]
+
+# ENTRYPOINT echo hello
+
+# CMD echo "hello"
+# CMD [ "echo", "hello" ]
+# CMD echo $HOME
+# CMD [ "echo", "$HOME" ]
